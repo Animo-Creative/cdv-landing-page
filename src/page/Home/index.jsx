@@ -1,8 +1,9 @@
+import HeaderComponent from "../../components/Header";
 
 function Home() {
   return (
     <div>
-        Olá mndo
+      <HeaderComponent/>
     </div>
   );
 }
