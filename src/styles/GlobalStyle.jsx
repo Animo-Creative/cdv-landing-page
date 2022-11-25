@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
+// font-family: 'Heebo', sans-serif;
+// font-family: 'Raleway', sans-serif;
+
 
 const GlobalStyle = createGlobalStyle`
+
   * {
     margin: 0;
     padding: 0;

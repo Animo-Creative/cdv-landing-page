@@ -1,8 +1,12 @@
+import FooterComponent from "../../components/Footer";
+import HeaderComponent from "../../components/Header";
+
 
 function Home() {
   return (
     <div>
-        Olá mndo
+      <HeaderComponent/>
+      <FooterComponent/>
     </div>
   );
 }

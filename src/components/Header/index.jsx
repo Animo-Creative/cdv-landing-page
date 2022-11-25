@@ -1,12 +1,18 @@
+import { Header } from "./style";
+import LogoHeader from "../../assets/cdv-logo-branco1.svg"
 
-
-function Header() {
+function HeaderComponent() {
 
   return (
-    <div>
-      
-    </div>
+    <Header>
+      <div>
+        <figure>
+          <img src={LogoHeader} alt="CDV - Blocos e pisos de concreto" />
+        </figure>
+        <h2>Blocos e Pisos de concreto</h2>
+      </div>
+    </Header>
   );
 };
 
-export default Header
+export default HeaderComponent
