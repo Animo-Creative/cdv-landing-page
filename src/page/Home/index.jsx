@@ -1,3 +1,4 @@
+import AboutComponent from "../../components/About";
 import FooterComponent from "../../components/Footer";
 import FormComponent from "../../components/Form";
 import HeaderComponent from "../../components/Header";
@@ -8,19 +9,7 @@ function Home() {
     <div>
       <HeaderComponent/>
       <FormComponent/>
-      <div width="100vw" height="500px">
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-      </div>
+      <AboutComponent/>
       <FooterComponent/>
     </div>
   );
