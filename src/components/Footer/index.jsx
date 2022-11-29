@@ -7,8 +7,7 @@ function FooterComponent() {
     <Footer>
       <div>
         <p>&copy; 2022 - CDV Blocos e Pisos de Concreto</p>
-        <button>Voltar ao topo <HiArrowUp className="arrow"/></button>
-        
+        <button><a href="#home">Voltar ao topo</a> <HiArrowUp className="arrow"/></button>
       </div>
     </Footer>
   );

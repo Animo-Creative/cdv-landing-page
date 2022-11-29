@@ -33,6 +33,11 @@ export const Footer = styled.footer`
             align-items: center;
             font-weight: bold;
 
+            a {
+                text-decoration: none;
+                color: var(--white);
+            }
+
             .arrow {
                 margin-left: 10px;
                 margin-top: 5px;
