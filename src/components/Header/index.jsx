@@ -5,7 +5,7 @@ function HeaderComponent() {
 
   return (
     <Header>
-      <div>
+      <div id="home">
         <figure>
           <img src={LogoHeader} alt="CDV - Blocos e pisos de concreto" />
         </figure>
