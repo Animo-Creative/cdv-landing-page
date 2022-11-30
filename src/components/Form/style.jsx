@@ -51,12 +51,17 @@ export const FormContainer = styled.div`
         height: 56px;
         border: none;
         border-radius: 2px;
-
+        
         background-color: var(--blue-one);
         color: var(--white);
         display: flex;
         align-items: center;
         justify-content: center;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
 
         .arrowDown {
           margin-left: 10px;

@@ -27,7 +27,7 @@ function AboutComponent() {
   const resu = width > 600 ? Resultado : ResultadoOrange
 
   return (
-    <About backAbout={BackAboutUs}>
+    <About backAbout={BackAboutUs} id="sobre-nos">
       <div className="container">
         <div className="quemSomos">
           <h3>Qualidade garantida!</h3>
