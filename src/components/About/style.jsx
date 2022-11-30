@@ -76,8 +76,8 @@ export const About = styled.div`
 
   @media (max-width: 600px) {
     width: 100vw;
-    height: 1851px;
-    background-image: url(${(props) => props.backAbout});
+    height: 2151px;
+    background-image: none;
     background-size: 100vh;
     display: flex;
     flex-direction: column;
@@ -86,7 +86,7 @@ export const About = styled.div`
     .container {
       flex-direction: column;
       width: 100vw;
-
+      height: 2500px;
       .quemSomos {
         width: 80%;
         height: auto;
@@ -213,6 +213,7 @@ export const NossosValores = styled.section`
     padding: 43px;
     background-color: transparent;
 
+
     .textsContainer {
       flex-direction: column;
       justify-content: space-between;
@@ -252,13 +253,11 @@ export const NossosValores = styled.section`
         align-items: center;
         justify-content: space-between;
         gap: 20px;
-        
-        svg {
-            color: var(--orange);
-        }
+        margin: 30px;
+        width: 40px;
 
         figcaption {
-          color: var(--white);
+          color: var(--black);
         }
       }
     }
