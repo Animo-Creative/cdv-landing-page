@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
     --yellow-background: #F2D30F;
     --yellow-dark: #CEB202;
     --orange: #E05100;
-    --white: #FBF9F9;
+    --white: #FFFFFF;
     --black: #121212
   }
 

@@ -40,7 +40,7 @@ function FormComponent() {
                 <h3>Referência no trabalho! <img className="certificate" src={Certificate} alt="" /></h3>
                 <h1>A segurança que a sua obra merece com a agilidade que você precisa</h1>
                 <p>A CDV garante mais qualidade, durabilidade e agilidade no fornecimento de Blocos, Pisos, Placas, Guias e Permeáveis, por meio de processos modernos e atendimento diferenciado para nossos clientes.</p>
-                <button>Sobre nós <HiArrowDown className="arrowDown"/></button>
+                <button><a href="#sobre-nos">Sobre nós</a> <HiArrowDown className="arrowDown"/></button>
                 <img className="barOne" src={BarOne} alt="" />
             </div>
             <div className="divForm">
