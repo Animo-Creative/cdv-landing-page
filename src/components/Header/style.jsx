@@ -15,7 +15,7 @@ export const Header = styled.header`
         align-items: center;
         padding: 0 20px;
         width: 100%;
-        max-width: 1360px;
+        max-width: 1260px;
         height: 100%;
 
         img {
