@@ -14,7 +14,18 @@ import AgilidadeOrange from "../../assets/ourValues/agilidade-orange.svg"
 import SolidezFinanceiraOrange from "../../assets/ourValues/solidez-financeira-orange.svg"
 import ResultadoOrange from "../../assets/ourValues/resultado-orange.svg"
 
+
 function AboutComponent() {
+  let width = window.screen.width;
+
+  
+  const cred = width > 600 ? Credibilidade : CredibilidadeOrange
+  const etic = width > 600 ? EticaTransparencia : EticaTransparenciaOrange
+  const lide = width > 600 ? Lideranca : LiderancaOrange
+  const agil = width > 600 ? Agilidade : AgilidadeOrange
+  const soli = width > 600 ? SolidezFinanceira : SolidezFinanceiraOrange
+  const resu = width > 600 ? Resultado : ResultadoOrange
+
   return (
     <About backAbout={BackAboutUs}>
       <div className="container">
@@ -71,27 +82,27 @@ function AboutComponent() {
         </div>
         <div className="imgsContainer">
           <figure>
-            <img src={Credibilidade} alt="Credibilidade" />
+            <img src={cred} alt="Credibilidade" />
             <figcaption>Credibilidade</figcaption>
           </figure>
           <figure>
-            <img src={EticaTransparencia} alt="Etica e Transparencia" />
+            <img src={etic} alt="Etica e Transparencia" />
             <figcaption>Ética e Transparência</figcaption>
           </figure>
           <figure>
-            <img src={Lideranca} alt="Liderança" />
+            <img src={lide} alt="Liderança" />
             <figcaption>Liderança</figcaption>
           </figure>
           <figure>
-            <img src={Agilidade} alt="Agilidade" />
+            <img src={agil} alt="Agilidade" />
             <figcaption>Agilidade</figcaption>
           </figure>
           <figure>
-            <img src={SolidezFinanceira} alt="Solidez Financeira" />
+            <img src={soli} alt="Solidez Financeira" />
             <figcaption>Solidez Financeira</figcaption>
           </figure>
           <figure>
-            <img src={Resultado} alt="Resultado" />
+            <img src={resu} alt="Resultado" />
             <figcaption>Resultado</figcaption>
           </figure>
           
