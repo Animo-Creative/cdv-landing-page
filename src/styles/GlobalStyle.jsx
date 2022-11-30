@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
     --yellow-dark: #CEB202;
     --orange: #E05100;
     --white: #FFFFFF;
+    --white-gray: #FBFBFB;
     --black: #121212
   }
 
@@ -40,11 +41,11 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  body, input, button, h2, h3, h4, h5, h6 {
+  body, input, button, h3, h4, h5, h6 {
     font-family: 'Heebo', sans-serif;
   }
 
-  h1 {
+  h1, h2 {
     font-family: 'Raleway', sans-serif;
   }
 
