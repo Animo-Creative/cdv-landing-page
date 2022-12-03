@@ -11,7 +11,9 @@ export const BlocksResistance = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
     max-width: 1920px;
+    margin: auto;
 
     .div-one {
       width: 50%;
@@ -59,7 +61,9 @@ export const BlocksResistance = styled.div`
       height: 622px;
       background-image: url(${(props) => props.backgroundTwo});
       background-size: 100%;
-
+      background-position: center;
+      background-repeat: no-repeat;
+ 
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
       filter: gray;
@@ -71,7 +75,8 @@ export const BlocksResistance = styled.div`
       height: 622px;
       background-image: url(${(props) => props.backgroundThree});
       background-size: 100%;
-
+      background-position: center;
+      background-repeat: no-repeat;
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
       filter: gray;
