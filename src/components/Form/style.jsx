@@ -151,22 +151,22 @@ export const FormContainer = styled.div`
     }
   }
 
-  @media (max-width: 900px) {
+ /*  @media (max-width: 850px) {
     section {
       flex-direction: column;
 
-/*       .divInfo {
+       .divInfo {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         width: 50%;
         height: 90%;
         align-items: flex-start;
-      } */
+      }
     }
-  }
+  } */
 
-  @media (max-width: 600px) {
+  @media (max-width: 849px) {
     background-image: url(${(props) => props.backMobile});
     background-size: 100vw;
     height: 1164px;

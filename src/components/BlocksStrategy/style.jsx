@@ -132,6 +132,117 @@ export const BlocksStrategy = styled.div`
   //////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////////
 
+
+  @media (max-width: 900px) {
+    height: auto;
+
+    .section-one {
+      height: auto;
+      margin: auto;
+      flex-direction: column;
+
+      div {
+        width: 100%;
+        margin: auto;
+        height: auto;
+      }
+
+      .descript {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+        padding: 0 50px;
+
+        h3 {
+          font-weight: 700;
+          font-size: 12px;
+          text-transform: uppercase;
+          color: var(--orange);
+        }
+
+        h2 {
+          font-weight: 700;
+          font-size: 24px;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 14px;
+        }
+      }
+
+      .figure-circles {
+        margin: 20px auto;
+        width: 50%;
+        height: 100%;
+
+        figure {
+          width: 80%;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .section-two {
+      height: auto;
+      flex-direction: column;
+      padding: 25px;
+      gap: 20px;
+      div {
+        width: 100%;
+        gap: 20px;
+
+        div {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+
+          h2 {
+            font-weight: 700;
+            font-size: 32px;
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            width: 100%;
+            text-align: center;
+          }
+        }
+
+        button {
+          width: 60%;
+          height: 49.53px;
+          background-color: var(--blue-one);
+          padding: 0 13px;
+          border: none;
+          border-radius: 4px;
+          color: var(--white);
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          a {
+            text-decoration: none;
+            color: white;
+          }
+
+          .arrowUpRight {
+            margin-left: 10px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+
   @media (max-width: 600px) {
     height: auto;
 

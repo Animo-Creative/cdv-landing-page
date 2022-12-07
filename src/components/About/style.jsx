@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const About = styled.div`
   width: 100vw;
   height: 1585px;
-  background-image: url(${(props) => props.backAbout});
   background-color: white;
   background-size: 100vw;
   display: flex;
@@ -71,6 +70,66 @@ export const About = styled.div`
 
     .bar-yel-blu {
       margin: 16px 15px 0 15px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    height: 1900px; //
+    padding: 150px 0; //
+
+    .container {
+      flex-direction: column; //
+      height: 500px; //
+      
+      .quemSomos {
+        width: 80%; //
+        height: auto; //
+        margin: 40px auto; //
+        padding: 48px; //
+
+        h3 {
+          font-size: 12px;
+        }
+
+        h2 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .nossaHistoria {
+        width: 80%; //
+        height: 400px; //
+        margin: auto; //
+        padding: 48px; //
+        flex-direction: column;
+
+        h3 {
+          font-size: 12px;
+        }
+
+        h2 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      figure {
+        width: 80%;
+        margin: 24px auto;
+        height: 63px;
+        overflow: hidden;
+
+        .bar-yel-blu {
+          margin: 0;
+        }
+      }
     }
   }
 
@@ -202,6 +261,66 @@ export const NossosValores = styled.section`
 
       figcaption {
         color: var(--white);
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 43px;
+    background-color: transparent;
+    background-image: none;
+
+    .textsContainer {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; //
+      width: 100%;
+      gap: 20px;
+
+      h3 {
+        font-size: 12px;
+        color: var(--orange);
+        font-weight: 700;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+      align-items: center; //
+
+        color: var(--black);
+
+        h2 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .imgsContainer {
+      width: 90%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+        
+      figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        margin: 20px;
+        width: 147px;
+
+        figcaption {
+          color: var(--black);
+        }
       }
     }
   }

@@ -19,12 +19,12 @@ function AboutComponent() {
   let width = window.screen.width;
 
   
-  const cred = width > 600 ? Credibilidade : CredibilidadeOrange
-  const etic = width > 600 ? EticaTransparencia : EticaTransparenciaOrange
-  const lide = width > 600 ? Lideranca : LiderancaOrange
-  const agil = width > 600 ? Agilidade : AgilidadeOrange
-  const soli = width > 600 ? SolidezFinanceira : SolidezFinanceiraOrange
-  const resu = width > 600 ? Resultado : ResultadoOrange
+  const cred = width > 900 ? Credibilidade : CredibilidadeOrange
+  const etic = width > 900 ? EticaTransparencia : EticaTransparenciaOrange
+  const lide = width > 900 ? Lideranca : LiderancaOrange
+  const agil = width > 900 ? Agilidade : AgilidadeOrange
+  const soli = width > 900 ? SolidezFinanceira : SolidezFinanceiraOrange
+  const resu = width > 900 ? Resultado : ResultadoOrange
 
   return (
     <About backAbout={BackAboutUs} id="sobre-nos">

@@ -30,16 +30,19 @@ export const WhereAreWe = styled.div`
         color: var(--orange);
         font-size: 16px;
         text-transform: uppercase;
+        text-align: center;
+
       }
 
       h2 {
         font-weight: 700;
-        font-size: 46px;
+        font-size: 32px;
+        text-align: center;
       }
 
       p {
         font-weight: 500;
-        font-size: 24px;
+        font-size: 16px;
       }
 
       div {
@@ -59,7 +62,7 @@ export const WhereAreWe = styled.div`
         a {
           font-style: normal;
           font-weight: 500;
-          font-size: 20px;
+          font-size: 16px;
           line-height: 160%;
           text-decoration-line: underline;
           color: black;
@@ -67,7 +70,7 @@ export const WhereAreWe = styled.div`
       }
 
       button {
-        width: 40%;
+        width: 100%;
         height: 49.53px;
         background-color: var(--blue-one);
         padding: 0 13px;
