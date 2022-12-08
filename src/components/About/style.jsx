@@ -8,11 +8,12 @@ export const About = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  overflow-x: hidden;
+  //overflow-x: hidden;
 
   .container {
     display: flex;
     justify-content: center;
+    //overflow: ;
 
     .quemSomos {
       width: 696px;
@@ -75,7 +76,7 @@ export const About = styled.div`
 
   @media (max-width: 900px) {
     height: 1900px; //
-    padding: 150px 0; //
+    padding-top: 150px; //
 
     .container {
       flex-direction: column; //
@@ -135,17 +136,18 @@ export const About = styled.div`
 
   @media (max-width: 600px) {
     width: 100vw;
-    height: 2151px;
+    height: 2295px;
     background-image: none;
     background-size: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 0;
 
     .container {
       flex-direction: column;
       width: 100vw;
-      height: 2500px;
+      height: 1287px;
       .quemSomos {
         width: 80%;
         height: auto;
@@ -171,6 +173,7 @@ export const About = styled.div`
       .nossaHistoria {
         width: 80%;
         margin: auto;
+        height: 660px;
         background-color: var(--blue-one);
         padding: 48px;
         display: flex;
@@ -202,6 +205,9 @@ export const About = styled.div`
       }
     }
   }
+@media (max-width: 330px) {
+  height: 2485px;
+}
 `;
 
 export const NossosValores = styled.section`
@@ -261,6 +267,7 @@ export const NossosValores = styled.section`
 
       figcaption {
         color: var(--white);
+        text-align: center;
       }
     }
   }
@@ -299,6 +306,7 @@ export const NossosValores = styled.section`
 
         p {
           font-size: 14px;
+          text-align: center;
         }
       }
     }
@@ -356,6 +364,7 @@ export const NossosValores = styled.section`
 
         p {
           font-size: 14px;
+          margin: 0 0 20px 0;
         }
       }
     }
@@ -371,14 +380,20 @@ export const NossosValores = styled.section`
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        gap: 20px;
-        margin: 30px;
-        width: 40px;
-
+        gap: 15px;
+        margin: 5px 30px;
+        width: 35px;
+        
         figcaption {
           color: var(--black);
         }
       }
     }
   }
+@media (max-width: 399px) {
+  .imgsContainer figure figcaption {
+          font-size: 14px;
+
+  }
+}
 `;

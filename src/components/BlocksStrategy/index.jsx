@@ -34,8 +34,7 @@ function BlocksStrategyComponent() {
         </div>
         <div>
           <button>
-            <a href="#home">Fazer orçamento</a>{" "}
-            <FiArrowUpRight className="arrowUpRight" />
+            <a href="#form">Fazer orçamento <FiArrowUpRight className="arrowUpRight" /></a>
           </button>
         </div>
       </section>

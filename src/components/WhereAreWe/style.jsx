@@ -39,9 +39,10 @@ export const WhereAreWe = styled.div`
         font-size: 32px;
         text-align: center;
       }
-
+      
       p {
         font-weight: 500;
+        text-align: center;
         font-size: 16px;
       }
 
@@ -81,16 +82,20 @@ export const WhereAreWe = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-
+        
         a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
             text-decoration: none;
             color: white;
+            width: 100%;
+            .arrowUpRight {
+              margin-left: 10px;
+              font-size: 18px;
+            }
         }
 
-        .arrowUpRight {
-          margin-left: 10px;
-          font-size: 18px;
-        }
       }
     }
   }

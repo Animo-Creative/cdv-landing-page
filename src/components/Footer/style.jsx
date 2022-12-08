@@ -36,6 +36,7 @@ export const Footer = styled.footer`
             a {
                 text-decoration: none;
                 color: var(--white);
+                width: 100%;
             }
 
             .arrow {

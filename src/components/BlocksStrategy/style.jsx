@@ -112,16 +112,21 @@ export const BlocksStrategy = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-
+        
         a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
           text-decoration: none;
           color: white;
+          width: 100%;
+
+          .arrowUpRight {
+            margin-left: 10px;
+            font-size: 18px;
+          }
         }
 
-        .arrowUpRight {
-          margin-left: 10px;
-          font-size: 18px;
-        }
       }
     }
   }

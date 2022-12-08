@@ -8,6 +8,7 @@ import { FiArrowUpRight } from "react-icons/fi"
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
+import { toast } from "react-toastify";
 
 
 function FormComponent() {
@@ -30,7 +31,8 @@ function FormComponent() {
     })
 
     function onSubmitFunction(data) {
-        console.log(data);
+        const name = data.name.split(" ")[0]
+        toast.success(`Pronto ${name}!`)
     }
     
     return (
@@ -44,7 +46,7 @@ function FormComponent() {
                 <img className="barOne" src={BarOne} alt="" />
             </div>
             <div className="divForm">
-                <form onSubmit={handleSubmit(onSubmitFunction)}>
+                <form id="form" onSubmit={handleSubmit(onSubmitFunction)}>
                     <p>Preencha abaixo para iniciar seu orçamento</p>
                     <div>
                         <label>Nome Completo{" "}
@@ -61,7 +63,7 @@ function FormComponent() {
                                 <span className="redSpan"> - {errors.email.message}</span>
                             )}
                         </label>
-                        <input placeholder="Escreva aqui" type="text" {...register("email")}/>
+                        <input placeholder="Escreva aqui" type="email" {...register("email")}/>
                     </div>
 
                     <div>
@@ -100,7 +102,7 @@ function FormComponent() {
                         <input placeholder="Escreva aqui" type="text" {...register("quantity")}/>
                     </div>
 
-                    <button>Fazer orçamento <FiArrowUpRight className="arrowUpRight"/></button>
+                    <button type="submit">Fazer orçamento <FiArrowUpRight className="arrowUpRight"/></button>
                 </form>
             </div>
         </section>

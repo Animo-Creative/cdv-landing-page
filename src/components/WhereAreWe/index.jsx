@@ -21,7 +21,7 @@ function WhereAreWeComponent() {
         <div>
           <h2>Aproveite já!</h2>
           <p>Garanta o melhor custo benefício para sua obra!</p>
-          <button><a href="#home">Fazer orçamento</a> <FiArrowUpRight className="arrowUpRight"/></button>
+          <button><a href="#form">Fazer orçamento <FiArrowUpRight className="arrowUpRight"/></a></button>
         </div>
       </section>
     </WhereAreWe>
