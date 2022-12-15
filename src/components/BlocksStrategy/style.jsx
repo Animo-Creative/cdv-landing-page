@@ -104,7 +104,6 @@ export const BlocksStrategy = styled.div`
         width: 40%;
         height: 49.53px;
         background-color: var(--blue-one);
-        padding: 0 13px;
         border: none;
         border-radius: 4px;
         color: var(--white);
@@ -120,6 +119,7 @@ export const BlocksStrategy = styled.div`
           text-decoration: none;
           color: white;
           width: 100%;
+          height: 100%;
 
           .arrowUpRight {
             margin-left: 10px;
@@ -130,13 +130,6 @@ export const BlocksStrategy = styled.div`
       }
     }
   }
-
-  //////////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////////
-  //////////////////////////////////////////////////////////////////////
-
 
   @media (max-width: 900px) {
     height: auto;

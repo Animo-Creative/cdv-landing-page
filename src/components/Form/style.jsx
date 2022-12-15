@@ -57,10 +57,15 @@ export const FormContainer = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-
+        
         a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
           color: white;
           text-decoration: none;
+          width: 100%;
+          height: 100%;
         }
 
         .arrowDown {
@@ -114,13 +119,51 @@ export const FormContainer = styled.div`
               font-size: 11px;
             }
           }
-
+          
           input {
             border: 0.884444px solid #c1c1c1;
             border-radius: 4px;
             height: 39.76px;
             background-color: var(--white);
             padding: 0 13px;
+          }
+          
+          .input-div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            width: 75%;
+            min-width: 250px;
+            
+            .input-radio {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 4px;
+              font-weight: 400;
+              width: 200px;
+              
+            }
+          }
+
+          .input-div-quantiy {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            width: 75%;
+            
+            .input-radio {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 4px;
+              font-weight: 400;
+              height: 20px;
+              
+              
+            }
           }
         }
 
@@ -150,21 +193,6 @@ export const FormContainer = styled.div`
       padding-left: 25px;
     }
   }
-
- /*  @media (max-width: 850px) {
-    section {
-      flex-direction: column;
-
-       .divInfo {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 50%;
-        height: 90%;
-        align-items: flex-start;
-      }
-    }
-  } */
 
   @media (max-width: 849px) {
     background-image: url(${(props) => props.backMobile});

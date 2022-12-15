@@ -74,11 +74,10 @@ export const WhereAreWe = styled.div`
         width: 100%;
         height: 49.53px;
         background-color: var(--blue-one);
-        padding: 0 13px;
         border: none;
-        border-radius: 4px;
         color: var(--white);
 
+        border-radius: 4px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -87,13 +86,15 @@ export const WhereAreWe = styled.div`
           display: flex;
           align-items: center;
           justify-content: center;
-            text-decoration: none;
-            color: white;
-            width: 100%;
-            .arrowUpRight {
-              margin-left: 10px;
-              font-size: 18px;
-            }
+          text-decoration: none;
+          color: white;
+          width: 100%;
+          height: 100%;
+          
+          .arrowUpRight {
+            margin-left: 10px;
+            font-size: 18px;
+          }
         }
 
       }
