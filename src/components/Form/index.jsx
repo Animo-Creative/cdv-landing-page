@@ -9,37 +9,84 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { toast } from "react-toastify";
+import { useState } from "react";
+import emailjs from "@emailjs/browser"
+
 
 function FormComponent() {
+  const [ cadastro, setCadastro ] = useState("Selecione")
+  const [ type, setType ] = useState("Selecione")
+  const [ quantity, setQuantity ] = useState("Selecione")
+
   const formSchema = yup.object().shape({
-    name: yup.string().required("Digite seu nome"),
+    nome: yup.string().required("Digite seu nome"),
     email: yup
       .string()
       .required("E-mail obrigatório")
       .email("Digite um e-mail válido"),
-    cellphone: yup
+    telefone: yup
       .string()
       .required("Telefone obrigatório")
       .matches(
         /^(?:(?:\+|00)?(55)\s?)?(?:\(?([1-9][0-9])\)?\s?)?(?:((?:9\d|[2-9])\d{3})\-?(\d{4}))$/,
         "Esse número está incorreto, tente algo assim: 11 91234 5678"
       ),
-    people: yup.string().required("Digite o nome de sua empresa"),
-    type: yup.string().required("Digite o tipo de produto"),
-    quantity: yup.string().required("Digite a quantidade"),
   });
 
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(formSchema),
   });
 
   function onSubmitFunction(data) {
-    const name = data.name.split(" ")[0];
-    toast.success(`Pronto ${name}!`);
+    data.cadastro = cadastro;
+    data.produto = type;
+    data.quantidade = quantity;
+    
+    const message = `
+      DADOS DO CLIENTE PARA ORÇAMENTO:
+      
+      Nome: ${data.nome}
+      Email: ${data.email}
+      Telefone: ${data.telefone}
+      Cadastro: ${data.cadastro}
+      Produto: ${data.produto}
+      Quantidade: ${data.quantidade}
+      `
+      
+      const templateParams = {
+        from_name: data.nome,
+      message: message,
+      email: data.email
+    }
+    const nome = data.nome.split(" ")[0];
+    toast
+    .promise(emailjs.send("service_npzppie", "template_b4aj0ik", templateParams, "mDuzYWiP3rA_N7X1u"), {
+      pending: {
+        render() {
+            return "Solicitando orçamento";
+          },
+        },
+        success: {
+          render() {
+            return `Pronto ${nome}! Orçamento solicitado!`;
+          },
+        },
+        error: "Ops, algo deu errado. Tente novamente!",
+      })
+      .then(() => {
+        reset()
+        setCadastro("Selecione")
+        setType("Selecione")
+        setQuantity("Selecione")
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
   return (
@@ -75,14 +122,14 @@ function FormComponent() {
             <div>
               <label>
                 Nome Completo{" "}
-                {errors.name && (
-                  <span className="redSpan"> - {errors.name.message}</span>
+                {errors.nome && (
+                  <span className="redSpan"> - {errors.nome.message}</span>
                 )}
               </label>
               <input
                 placeholder="Escreva aqui"
                 type="text"
-                {...register("name")}
+                {...register("nome")}
               />
             </div>
 
@@ -103,15 +150,15 @@ function FormComponent() {
             <div>
               <label>
                 Telefone{" "}
-                {errors.cellphone && (
-                  <span className="redSpan"> - {errors.cellphone.message}</span>
+                {errors.telefone && (
+                  <span className="redSpan"> - {errors.telefone.message}</span>
                 )}
               </label>
               <input
                 mask="(00) 00000-0000"
                 placeholder="Escreva aqui"
                 type="phone"
-                {...register("cellphone")}
+                {...register("telefone")}
               />
             </div>
 
@@ -120,12 +167,14 @@ function FormComponent() {
 
               <div className="input-div">
                 <select
-                  name="cpfOrCnpj"
-                  id="cpfOrCnpj"
+                  name="cadastro"
+                  id="cadastro"
                   className="selects"
                   required
+                  value={cadastro}
+                  onChange={(e) => setCadastro(e.target.value)}
                 >
-                  <option selected disabled value="">
+                  <option selected value="">
                     Selecione
                   </option>
                   <option value="Pessoa Física">Pessoa Física</option>
@@ -143,8 +192,11 @@ function FormComponent() {
                   id="typeProduct"
                   className="selects"
                   required
+                  value={type}
+                  onChange={(e) => setType(e.target.value)}
+
                 >
-                  <option selected disabled value="">
+                  <option selected value="">
                     Selecione
                   </option>
                   <option value="Blocos">Blocos</option>
@@ -162,8 +214,10 @@ function FormComponent() {
                   id="quantity"
                   className="selects"
                   required
+                  value={quantity}
+                  onChange={(e) => setQuantity(e.target.value)}
                 >
-                  <option selected disabled value="">
+                  <option selected value="">
                     Selecione
                   </option>
                   <option value="Abaixo de mil">Abaixo de mil</option>

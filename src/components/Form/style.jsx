@@ -148,9 +148,10 @@ export const FormContainer = styled.div`
             .selects {
               border: 0.884444px solid #c1c1c1;
               border-radius: 4px;
+              width: 110px;
               height: 39.76px;
               background-color: var(--white);
-              padding: 0 13px;
+              padding: 0 7px;
             }
           }
 
