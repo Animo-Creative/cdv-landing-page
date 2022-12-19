@@ -119,24 +119,18 @@ function FormComponent() {
               <label>Pessoa física ou jurídica</label>
 
               <div className="input-div">
-                <label className="input-radio">
-                  <input
-                    type="radio"
-                    name="cpfOrCnpj"
-                    value="Pessoa Física"
-                    required
-                  />
-                  Pessoa Física
-                </label>
-                <label className="input-radio">
-                  <input
-                    type="radio"
-                    name="cpfOrCnpj"
-                    value="Pessoa Jurídica"
-                    required
-                  />
-                  Pessoa Jurídica
-                </label>
+                <select
+                  name="cpfOrCnpj"
+                  id="cpfOrCnpj"
+                  className="selects"
+                  required
+                >
+                  <option selected disabled value="">
+                    Selecione
+                  </option>
+                  <option value="Pessoa Física">Pessoa Física</option>
+                  <option value="Pessoa Jurídica">Pessoa Jurídica</option>
+                </select>
               </div>
             </div>
 
@@ -144,37 +138,39 @@ function FormComponent() {
               <label>Tipo de Produto</label>
 
               <div className="input-div">
-                <label className="input-radio">
-                  <input type="radio" name="typeProduct" value="Blocos" required/>
-                  Blocos
-                </label>
-                <label className="input-radio">
-                  <input type="radio" name="typeProduct" value="Pisos" required/>
-                  Pisos
-                </label>
+                <select
+                  name="typeProduct"
+                  id="typeProduct"
+                  className="selects"
+                  required
+                >
+                  <option selected disabled value="">
+                    Selecione
+                  </option>
+                  <option value="Blocos">Blocos</option>
+                  <option value="Pisos">Pisos</option>
+                </select>
               </div>
             </div>
 
             <div>
               <label>Quantidade</label>
 
-              <div className="input-div-quantiy">
-                <label className="input-radio">
-                  <input type="radio" name="quantity" value="Abaixo de mil" required/>
-                  Abaixo de mil
-                </label>
-                <label className="input-radio">
-                  <input type="radio" name="quantity" value="Abaixo de mil" required/>
-                  Acima de mil
-                </label>
-                <label className="input-radio">
-                  <input type="radio" name="quantity" value="Abaixo de mil" required/>
-                  Acima de 5 mil
-                </label>
-                <label className="input-radio">
-                  <input type="radio" name="quantity" value="Abaixo de mil" required/>
-                  Acima de 10 mil
-                </label>
+              <div className="input-div">
+                <select
+                  name="quantity"
+                  id="quantity"
+                  className="selects"
+                  required
+                >
+                  <option selected disabled value="">
+                    Selecione
+                  </option>
+                  <option value="Abaixo de mil">Abaixo de mil</option>
+                  <option value="Acima de mil">Acima de mil</option>
+                  <option value="Acima de 5 mil">Acima de 5 mil</option>
+                  <option value="Acima de 10 mil">Acima de 10 mil</option>
+                </select>
               </div>
             </div>
 
