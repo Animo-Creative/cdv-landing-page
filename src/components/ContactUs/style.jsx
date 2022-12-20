@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-export const WhereAreWe = styled.div`
+export const ContactUs = styled.div`
   width: 100vw;
-  height: 406px;
-  background-color: var(--yellow-background);
-  margin-bottom: 112px;
+  height: calc(100vh - 198px);
+  min-height: 735px;
+  background-image: url(${(props) => props.backDesktop});
+  background-size: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -18,14 +19,128 @@ export const WhereAreWe = styled.div`
     align-items: center;
     flex-wrap: wrap;
     
-    div {
+    .divForm {
       width: 50%;
-      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+
+      form {
+        width: 398px;
+        height: 700px;
+        background-color: var(--white);
+        border-radius: 13px;
+        box-shadow: 0px 5.30667px 61.9111px rgba(0, 0, 0, 0.25);
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        p {
+          font-size: 24.7644px;
+          width: 90%;
+          font-weight: bold;
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          label {
+            font-size: 13px;
+            font-weight: 800;
+
+            .redSpan {
+              color: red;
+              font-size: 11px;
+            }
+          }
+
+          input {
+            border: 0.884444px solid #c1c1c1;
+            border-radius: 4px;
+            height: 39.76px;
+            background-color: var(--white);
+            padding: 0 13px;
+          }
+
+          .input-div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            width: 75%;
+            min-width: 250px;
+
+            .input-radio {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 4px;
+              font-weight: 400;
+              width: 200px;
+            }
+
+            .selects {
+              border: 0.884444px solid #c1c1c1;
+              border-radius: 4px;
+              width: 110px;
+              height: 39.76px;
+              background-color: var(--white);
+              padding: 0 7px;
+            }
+          }
+
+          .input-div-quantiy {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            width: 75%;
+
+            .input-radio {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 4px;
+              font-weight: 400;
+              height: 20px;
+            }
+          }
+        }
+
+        button {
+          height: 49.53px;
+          background-color: var(--blue-one);
+          padding: 0 13px;
+          border: none;
+          border-radius: 4px;
+          color: var(--white);
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .arrowUpRight {
+            margin-left: 10px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .divInfo {
+      width: 50%;
+      height: 80%;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      align-items: flex-start;
       padding: 0 50px;
 
+      
       h3 {
         color: var(--orange);
         font-size: 16px;
@@ -98,6 +213,8 @@ export const WhereAreWe = styled.div`
         }
 
       }
+
+      
     }
   }
 

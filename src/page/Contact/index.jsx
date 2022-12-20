@@ -1,10 +1,8 @@
-import AboutComponent from "../../components/About";
-import BlocksStrategyComponent from "../../components/BlocksStrategy";
+import ContactUs from "../../components/ContactUs";
 import { motion } from "framer-motion";
-import FormComponent from "../../components/Form";
 import FooterComponent from "../../components/Footer";
 
-function HomePage() {
+function Contact() {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -13,13 +11,11 @@ function HomePage() {
       transition={{ duration: 0.5 }}
     >
       <div>
-        <FormComponent />
-        <AboutComponent />
-        <BlocksStrategyComponent />
+        <ContactUs />
         <FooterComponent/>
       </div>
     </motion.div>
   );
 }
 
-export default HomePage;
+export default Contact;
