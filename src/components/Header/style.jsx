@@ -41,7 +41,15 @@ export const Header = styled.header`
           :hover {
             color: var(--yellow-background);
           }
-          color: white;
+          color: var(--white);
+        }
+      }
+      
+      #${(props) => props.linkId} {
+        color: var(--yellow-background);
+        
+        :visited {
+          color: var(--yellow-background);
         }
       }
     }

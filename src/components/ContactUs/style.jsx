@@ -9,7 +9,7 @@ export const ContactUs = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
+
   section {
     width: 100%;
     height: 100%;
@@ -18,7 +18,7 @@ export const ContactUs = styled.div`
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    
+
     .divForm {
       width: 50%;
       display: flex;
@@ -133,32 +133,38 @@ export const ContactUs = styled.div`
 
     .divInfo {
       width: 50%;
-      height: 80%;
+      height: 90%;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: flex-start;
       padding: 0 50px;
 
-      
+      #formMobile {
+        display: none;
+      }
+
       h3 {
         color: var(--orange);
         font-size: 16px;
         text-transform: uppercase;
-        text-align: center;
-
       }
 
       h2 {
         font-weight: 700;
-        font-size: 32px;
-        text-align: center;
+        font-size: 48px;
+        line-height: 128%;
       }
-      
+
       p {
-        font-weight: 500;
-        text-align: center;
+        font-weight: 400;
         font-size: 16px;
+        line-height: 160%;
+
+        span {
+          font-weight: 700;
+          color: var(--orange);
+        }
       }
 
       div {
@@ -167,7 +173,6 @@ export const ContactUs = styled.div`
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        align-items: center;
         padding: 0;
 
         img {
@@ -176,12 +181,40 @@ export const ContactUs = styled.div`
         }
 
         a {
+          display: flex;
+          align-items: center;
           font-style: normal;
-          font-weight: 500;
+          font-weight: 400;
           font-size: 16px;
           line-height: 160%;
           text-decoration-line: underline;
           color: black;
+
+          #fiArrowUpRight {
+            color: var(--orange);
+            margin-left: 10px;
+            font-size: 20px;
+          }
+        }
+      }
+
+      .hourAddress {
+        display: flex;
+        flex-direction: column;
+
+        h4 {
+          margin-bottom: 10px;
+        }
+      }
+
+      #numberPhone {
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 160%;
+
+        span {
+          display: flex;
+          align-items: center;
         }
       }
 
@@ -196,7 +229,7 @@ export const ContactUs = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
         a {
           display: flex;
           align-items: center;
@@ -205,16 +238,121 @@ export const ContactUs = styled.div`
           color: white;
           width: 100%;
           height: 100%;
-          
+
           .arrowUpRight {
             margin-left: 10px;
             font-size: 18px;
           }
         }
+      }
+    }
+  }
 
+  @media (max-width: 900px) {
+    width: 100vw;
+    height: auto;
+    margin-bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    background-image: url(${(props) => props.backTablet});
+
+    section {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+
+      .divInfo {
+        width: 100%;
+        align-items: center;
+        padding: 5vw 100px;
+
+        h2 {
+          font-size: 40px;
+          text-align: center;
+        }
+
+        #formMobile {
+          display: flex;
+          width: auto;
+          margin: 18vw auto;
+        }
+
+        #numberPhone {
+          width: 100%;
+        }
       }
 
-      
+      #formDesktop {
+        display: none;
+      }
+
+      div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0 50px;
+        margin: 30px 0;
+        gap: 20px;
+
+        h3 {
+          font-size: 12px;
+        }
+
+        h2 {
+          font-size: 28px;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+        }
+
+        div {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          padding: 0;
+          margin: 0;
+          gap: 0;
+
+          img {
+            height: 30px;
+            margin-right: 20px;
+          }
+
+          a {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 160%;
+            text-decoration: none;
+            text-decoration-line: underline;
+          }
+        }
+
+        button {
+          width: 100%;
+          height: 49.53px;
+          background-color: var(--blue-one);
+          padding: 0 13px;
+          border: none;
+          border-radius: 4px;
+          color: var(--white);
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .arrowUpRight {
+            margin-left: 10px;
+            font-size: 18px;
+          }
+        }
+      }
     }
   }
 
@@ -224,79 +362,100 @@ export const ContactUs = styled.div`
     margin-bottom: 0;
     flex-direction: column;
     justify-content: center;
-    padding: 40px 0;
+    padding: 0;
+    background-image: url(${(props) => props.backMobile});
+    background-size: 100vw;
 
     section {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+
+      .divInfo {
         width: 100%;
-        height: 100%;
+        padding: 0 50px;
+
+
+        h2 {
+          font-size: 28px;
+        }
+
+        #formMobile {
+          display: flex;
+          margin: 100px 0;
+        }
+      }
+
+      #formDesktop {
+        display: none;
+      }
+
+      div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0 50px;
+        margin: 30px 0;
+        gap: 20px;
+
+        h3 {
+          font-size: 12px;
+        }
+
+        h2 {
+          font-size: 28px;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+        }
 
         div {
           width: 100%;
+          height: auto;
           display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          padding: 0 50px;
-          margin: 30px 0;
-          gap: 20px;
-          
-          h3 {
-            font-size: 12px;
-          }
-      
-          h2 {
-            font-size: 32px;
-          }
-      
-          p {
-            font-weight: 400;
-            font-size: 16px;
-          }
-      
-          div {
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 0;
-            margin: 0;
-            gap: 0;
+          flex-direction: row;
+          justify-content: flex-start;
+          padding: 0;
+          margin: 0;
+          gap: 0;
 
-            img {
-              height: 30px;
-              margin-right: 20px;
-            }
-      
-            a {
-              font-style: normal;
-              font-weight: 500;
-              font-size: 16px;
-              line-height: 160%;
-              text-decoration: none;
-              text-decoration-line: underline;
-            }
+          img {
+            height: 30px;
+            margin-right: 20px;
           }
-      
-          button {
-            width: 100%;
-            height: 49.53px;
-            background-color: var(--blue-one);
-            padding: 0 13px;
-            border: none;
-            border-radius: 4px;
-            color: var(--white);
-      
-            display: flex;
-            align-items: center;
-            justify-content: center;
-      
-            .arrowUpRight {
-              margin-left: 10px;
-              font-size: 18px;
-            }
+
+          a {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 160%;
+            text-decoration: none;
+            text-decoration-line: underline;
           }
         }
+
+        button {
+          width: 100%;
+          height: 49.53px;
+          background-color: var(--blue-one);
+          padding: 0 13px;
+          border: none;
+          border-radius: 4px;
+          color: var(--white);
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .arrowUpRight {
+            margin-left: 10px;
+            font-size: 18px;
+          }
+        }
+      }
     }
   }
-  `;
+`;

@@ -59,7 +59,7 @@ function Formulario() {
     }
     const nome = data.nome.split(" ")[0];
     toast
-    .promise(emailjs.send("service_npzppie", "template_b4aj0ik", templateParams, "mDuzYWiP3rA_N7X1u"), {
+    .promise(emailjs.send("service_25lk82j", "template_8s3803h", templateParams, "fP2o81_ckd383koPa"), {
       pending: {
         render() {
             return "Solicitando orçamento";

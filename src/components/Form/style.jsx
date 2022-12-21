@@ -196,6 +196,10 @@ export const FormContainer = styled.div`
   }
 
   @media (max-width: 1000px) {
+    section {
+      align-items: center;
+    }
+
     .divInfo {
       padding-left: 25px;
     }
@@ -209,6 +213,7 @@ export const FormContainer = styled.div`
     section {
       justify-content: center;
       flex-direction: column;
+      align-items: center;
 
       .divInfo {
         width: 80%;

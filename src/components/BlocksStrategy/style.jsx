@@ -86,7 +86,6 @@ export const BlocksStrategy = styled.div`
         display: flex;
         justify-content: center;
         flex-direction: column;
-        align-items: flex-start;
 
         h2 {
           font-weight: 700;
@@ -308,7 +307,7 @@ export const BlocksStrategy = styled.div`
           display: flex;
           justify-content: center;
           flex-direction: column;
-          align-items: flex-start;
+          align-items: center;
 
           h2 {
             font-weight: 700;
