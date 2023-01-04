@@ -8,7 +8,7 @@ export const Header = styled.header`
   display: flex;
   justify-content: center;
 
-  div {
+  #home {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,6 +16,14 @@ export const Header = styled.header`
     width: 100%;
     max-width: 1260px;
     height: 100%;
+
+    #menuHamb {
+        display: none;
+        font-size: 30px;
+        cursor: pointer;
+      }
+
+    
 
     img {
       width: 120px;
@@ -47,7 +55,7 @@ export const Header = styled.header`
       
       #${(props) => props.linkId} {
         color: var(--yellow-background);
-        
+
         :visited {
           color: var(--yellow-background);
         }
@@ -57,16 +65,58 @@ export const Header = styled.header`
 
   @media (max-width: 600px) {
     height: 60px;
+    padding: 0 20px;
 
-    div {
-      justify-content: space-around;
+    #home {
+      justify-content: space-between;
 
+      #linksDesktop {
+        display: none;
+      }
+
+      #menuHamb {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+      }
+      
       img {
         width: 95px;
       }
-
+      
       h2 {
         font-size: 10px;
+      }
+    }
+
+    #linksMobile {
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+      background-color: var(--blue-one);
+      color: var(--white);
+      position: absolute;
+      
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+
+        li {
+          font-size: 25px;
+        }
+
+        a {
+          color: white;
+        }
+
+        #${(props) => props.linkId} {
+          color: var(--yellow-background);
+        }
       }
     }
   }
