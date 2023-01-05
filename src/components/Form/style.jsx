@@ -218,11 +218,11 @@ export const FormContainer = styled.div`
       .divInfo {
         width: 80%;
         height: 30%;
-        margin: 35px 0;
+        margin-bottom: 35px;
 
         h3 {
           font-size: 12px;
-
+          margin-top: 0;
           .certificate {
             width: 20px;
           }
