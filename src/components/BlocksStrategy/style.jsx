@@ -175,7 +175,7 @@ export const BlocksStrategy = styled.div`
     .section-one {
       height: auto;
       margin: auto;
-      flex-direction: column;
+      flex-direction: row;
 
       div {
         width: 100%;
@@ -208,16 +208,34 @@ export const BlocksStrategy = styled.div`
         }
       }
 
-      .figure-circles {
-        margin: 20px auto;
-        width: 50%;
-        height: 100%;
+      .our-pilars {
+        width: 100%;
+        height: 320px;
+        padding: 25px 50px;
+        margin: 70px 0;
 
-        figure {
-          width: 80%;
+        h2 {
+          font-size: 24px;
+        }
 
-          img {
-            width: 100%;
+        #see {
+          font-size: 14px;
+        }
+
+        .pilars {
+          p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 160%;
+          }
+
+          .check {
+            font-size: 23px;
+          }
+
+          #p2,
+          #p4 {
+            left: 130px;
           }
         }
       }

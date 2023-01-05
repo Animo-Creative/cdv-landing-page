@@ -23,12 +23,13 @@ export const BlocksResistance = styled.div`
       justify-content: flex-end;
 
       div {
-        width: 60%;
+        width: 70%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 20px;
         padding: 85px 0;
+        margin: 0;
 
         h3 {
           font-weight: 700;
@@ -59,27 +60,33 @@ export const BlocksResistance = styled.div`
       width: 50%;
       max-width: 970px;
       height: 622px;
-      background-image: url(${(props) => props.backgroundTwo});
-      background-size: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
- 
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-      filter: gray;
-    }
+      display: flex;
+      align-items: center;
 
+      figure {
+        width: 70%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+    
     .div-three {
       width: 50%;
       max-width: 970px;
       height: 622px;
-      background-image: url(${(props) => props.backgroundThree});
-      background-size: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-      filter: gray;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      figure {
+        width: 70%;
+  
+        img {
+          width: 100%;
+        }
+      }
     }
 
     .div-four {
@@ -112,7 +119,10 @@ export const BlocksResistance = styled.div`
         }
 
         ul {
+          display: flex;
+          flex-direction: column;
           margin-left: 40px;
+          gap: 20px;
 
           li {
             font-weight: 400;
@@ -138,21 +148,15 @@ export const BlocksResistance = styled.div`
         justify-content: flex-start;
 
         div {
-          width: 100%;
+          width: 100% !important;
           justify-content: center;
 
           h3 {
-            font-weight: 700;
             font-size: 12px;
-            color: var(--orange);
-            text-transform: uppercase;
           }
 
           h2 {
-            font-weight: 700;
             font-size: 24px;
-            font-family: "Raleway", sans-serif;
-            width: 90%;
           }
 
           ul {
@@ -168,35 +172,22 @@ export const BlocksResistance = styled.div`
 
       .div-two {
         width: 100%;
-        height: 200px;
+        height: 100%;
 
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        filter: gray;
+        figure {
+          margin: auto;
+        }
       }
-
-      
-
-      
     }
 
     .container-two {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row;
 
         .div-three {
         width: 100%;
         height: 200px;
-
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        filter: gray;
       }
-
-      /////////////////////////////////////////////////////////////////////////
-      /////////////////////////////////////////////////////////////////////////
-      /////////////////////////////////////////////////////////////////////////
-      /////////////////////////////////////////////////////////////////////////
 
       .div-four {
         width: 100%;
@@ -284,10 +275,6 @@ export const BlocksResistance = styled.div`
       .div-two {
         width: 100%;
         height: 200px;
-
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        filter: gray;
       }
 
       
@@ -302,16 +289,7 @@ export const BlocksResistance = styled.div`
         .div-three {
         width: 100%;
         height: 200px;
-
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        filter: gray;
       }
-
-      /////////////////////////////////////////////////////////////////////////
-      /////////////////////////////////////////////////////////////////////////
-      /////////////////////////////////////////////////////////////////////////
-      /////////////////////////////////////////////////////////////////////////
 
       .div-four {
         width: 100%;
@@ -342,7 +320,7 @@ export const BlocksResistance = styled.div`
 
           ul {
             margin-left: 40px;
-
+            gap: 0;
             li {
               font-weight: 400;
               font-size: 14px;
