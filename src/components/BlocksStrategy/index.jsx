@@ -1,6 +1,8 @@
 import { BlocksStrategy } from "./style";
-import Circles from "../../assets/circles-about.svg";
 import { FiArrowUpRight } from "react-icons/fi";
+import { BsFillCheckCircleFill } from "react-icons/bs";
+
+
 function BlocksStrategyComponent() {
   return (
     <BlocksStrategy>
@@ -19,10 +21,19 @@ function BlocksStrategyComponent() {
             entrega.
           </p>
         </div>
-        <div className="figure-circles">
-          <figure>
-            <img src={Circles} alt="" />
-          </figure>
+
+
+        <div className="our-pilars">
+          <h2>Atendemos diversas <br />obras, principalmente <br/>grandes construtoras!</h2>
+          <p id="see">Veja só alguns de nossos pilares:</p>
+          <div id="pilar1" className="pilars">
+            <p><BsFillCheckCircleFill className="check" /> Versátil;</p>
+            <p id="p2"><BsFillCheckCircleFill className="check" /> Econômico;</p>
+          </div>
+          <div id="pilar2" className="pilars">
+            <p><BsFillCheckCircleFill className="check" /> Ecológico;</p>
+            <p id="p4"><BsFillCheckCircleFill className="check" /> Obra Limpa e Rápida.</p>
+          </div>
         </div>
       </section>
       <section className="section-two">

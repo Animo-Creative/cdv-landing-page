@@ -16,7 +16,7 @@ export const FormContainer = styled.div`
     max-width: 1260px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
 
     .divInfo {
       display: flex;
@@ -31,6 +31,7 @@ export const FormContainer = styled.div`
         align-items: center;
         text-transform: uppercase;
         font-size: 16px;
+        margin-top: 64px;
 
         .certificate {
           margin-left: 10px;
@@ -94,7 +95,7 @@ export const FormContainer = styled.div`
         border-radius: 13px;
         box-shadow: 0px 5.30667px 61.9111px rgba(0, 0, 0, 0.25);
         padding: 35px;
-        margin-top: 124.5px;
+        margin-top: 64px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -195,6 +196,10 @@ export const FormContainer = styled.div`
   }
 
   @media (max-width: 1000px) {
+    section {
+      align-items: center;
+    }
+
     .divInfo {
       padding-left: 25px;
     }
@@ -208,15 +213,16 @@ export const FormContainer = styled.div`
     section {
       justify-content: center;
       flex-direction: column;
+      align-items: center;
 
       .divInfo {
         width: 80%;
         height: 30%;
-        margin: 35px 0;
+        margin-bottom: 35px;
 
         h3 {
           font-size: 12px;
-
+          margin-top: 0;
           .certificate {
             width: 20px;
           }

@@ -1,6 +1,6 @@
-import Home from "../src/page/Home/index";
 import GlobalStyle from "./styles/GlobalStyle";
 import { ToastContainer } from "react-toastify";
+import Router from "./Routes";
 import "react-toastify/dist/ReactToastify.min.css";
 import { Slide } from 'react-toastify';
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Home />
+      <Router />
       <ToastContainer
         theme="light"
         position="top-right"

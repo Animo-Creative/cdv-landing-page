@@ -48,21 +48,61 @@ export const BlocksStrategy = styled.div`
       }
     }
 
-    .figure-circles {
-      margin: auto;
+    .our-pilars {
       width: 50%;
       height: 100%;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
+      padding: 145px 7% 7% 7%;
 
-      figure {
-        width: 536px;
+      h2 {
+        font-weight: 700;
+        font-size: 40px;
+      }
 
-        img {
-          width: 100%;
+      #see {
+        font-weight: 400;
+        font-size: 18px;
+        margin: 0;
+        margin: 30px 0;
+        line-height: 160%;
+      }
+
+      .pilars {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        margin: 0;
+        width: 100%;
+        gap: 15px;
+
+        position: relative;
+
+        p {
+          position: absolute;
+          display: flex;
+          align-items: center;
+
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 160%;
         }
+
+        .check {
+          color: #23c450;
+          font-size: 25px;
+          margin-right: 10px;
+        }
+
+        #p2,
+        #p4 {
+          left: 170px;
+        }
+      }
+
+      #pilar2 {
+        top: 40px;
       }
     }
   }
@@ -86,7 +126,6 @@ export const BlocksStrategy = styled.div`
         display: flex;
         justify-content: center;
         flex-direction: column;
-        align-items: flex-start;
 
         h2 {
           font-weight: 700;
@@ -111,7 +150,7 @@ export const BlocksStrategy = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
         a {
           display: flex;
           align-items: center;
@@ -126,7 +165,6 @@ export const BlocksStrategy = styled.div`
             font-size: 18px;
           }
         }
-
       }
     }
   }
@@ -137,7 +175,7 @@ export const BlocksStrategy = styled.div`
     .section-one {
       height: auto;
       margin: auto;
-      flex-direction: column;
+      flex-direction: row;
 
       div {
         width: 100%;
@@ -170,16 +208,34 @@ export const BlocksStrategy = styled.div`
         }
       }
 
-      .figure-circles {
-        margin: 20px auto;
-        width: 50%;
-        height: 100%;
+      .our-pilars {
+        width: 100%;
+        height: 320px;
+        padding: 25px 50px;
+        margin: 70px 0;
 
-        figure {
-          width: 80%;
+        h2 {
+          font-size: 24px;
+        }
 
-          img {
-            width: 100%;
+        #see {
+          font-size: 14px;
+        }
+
+        .pilars {
+          p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 160%;
+          }
+
+          .check {
+            font-size: 23px;
+          }
+
+          #p2,
+          #p4 {
+            left: 130px;
           }
         }
       }
@@ -240,7 +296,6 @@ export const BlocksStrategy = styled.div`
     }
   }
 
-
   @media (max-width: 600px) {
     height: auto;
 
@@ -280,16 +335,34 @@ export const BlocksStrategy = styled.div`
         }
       }
 
-      .figure-circles {
-        margin: 20px auto;
+      .our-pilars {
         width: 100%;
-        height: 100%;
+        height: 320px;
+        padding: 25px 50px;
+        margin: 70px 0;
 
-        figure {
-          width: 80%;
+        h2 {
+          font-size: 24px;
+        }
 
-          img {
-            width: 100%;
+        #see {
+          font-size: 14px;
+        }
+
+        .pilars {
+          p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 160%;
+          }
+
+          .check {
+            font-size: 23px;
+          }
+
+          #p2,
+          #p4 {
+            left: 130px;
           }
         }
       }
@@ -300,6 +373,7 @@ export const BlocksStrategy = styled.div`
       flex-direction: column;
       padding: 25px;
       gap: 20px;
+
       div {
         width: 100%;
         gap: 20px;
@@ -308,7 +382,7 @@ export const BlocksStrategy = styled.div`
           display: flex;
           justify-content: center;
           flex-direction: column;
-          align-items: flex-start;
+          align-items: center;
 
           h2 {
             font-weight: 700;

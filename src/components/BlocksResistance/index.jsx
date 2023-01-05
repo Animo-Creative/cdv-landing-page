@@ -25,11 +25,19 @@ function BlocksResistanceComponent() {
             </ul>
           </div>
         </div>
-        <div className="div-two"/>
+        <div className="div-two">
+          <figure>
+            <img src={BlockConstruction} alt="Blocos" />
+          </figure>
+        </div>
       </div>
 
       <div className="container-two">
-        <div className="div-three"/>
+        <div className="div-three">
+          <figure>
+            <img src={Concrete} alt="Blocos" />
+          </figure>
+        </div>
         <div className="div-four">
           <div>
             <h3>O melhor acabamento!</h3>
