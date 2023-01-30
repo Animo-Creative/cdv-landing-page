@@ -1,5 +1,7 @@
 import { ContactUs } from "./style";
 import { FiArrowUpRight } from "react-icons/fi";
+import { AiOutlineClockCircle } from "react-icons/ai";
+import { SlLocationPin } from "react-icons/sl";
 import { RiWhatsappFill } from "react-icons/ri";
 import BackgroundDesk from "../../assets/background-contato-desktop.png";
 import BackgroundMob from "../../assets/background-contato-mobile.png";
@@ -21,7 +23,7 @@ function ContactUsComponent() {
           </div>
 
           <div className="hourAddress">
-            <h4>HORÁRIO DE FUNCIONAMENTO</h4>
+            <h4>HORÁRIO DE FUNCIONAMENTO <AiOutlineClockCircle className="icons-orange"/></h4>
             <p>
               De segunda à quinta: <span>07:00 – 17:00</span>
             </p>
@@ -30,13 +32,11 @@ function ContactUsComponent() {
             </p>
           </div>
           <div className="hourAddress">
-            <h4>ENDEREÇO</h4>
+            <h4>ENDEREÇO <SlLocationPin className="icons-orange"/></h4>
             <a
               target="blank"
               href="https://www.google.com/maps/dir//Rod.+Floriano+Rodrigues+Pinheiro,+km+06+-+Quiririm,+Taubat%C3%A9+-+SP,+12042-000/@-23.0110211,-45.7093503,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94cc57a91575f97f:0x8fc66251b6d0e5d5!2m2!1d-45.6393099!2d-23.0110365"
-            >
-              Rod. Floriano Rodrigues Pinheiro, km 06 - Quiririm, Taubaté - SP
-              <FiArrowUpRight id="fiArrowUpRight" />
+            >Rod. Floriano Rodrigues Pinheiro, km 06 - Quiririm, Taubaté - SP
             </a>
           </div>
           <p id="numberPhone">

@@ -152,7 +152,7 @@ export const ContactUs = styled.div`
 
       h2 {
         font-weight: 700;
-        font-size: 48px;
+        font-size: 40px;
         line-height: 128%;
       }
 
@@ -201,9 +201,19 @@ export const ContactUs = styled.div`
       .hourAddress {
         display: flex;
         flex-direction: column;
-
+        background-color: #F0F0F0;
+        padding: 24px;
+        max-width: 384px;
+        
         h4 {
           margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+    
+            .icons-orange {
+              color: var(--orange);
+              margin-left: 5px;
+            }
         }
       }
 
