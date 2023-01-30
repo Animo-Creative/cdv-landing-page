@@ -50,14 +50,16 @@ function Formulario() {
       Cadastro: ${data.cadastro}
       Produto: ${data.produto}
       Quantidade: ${data.quantidade}
-      `
+    `
       
-      const templateParams = {
-        from_name: data.nome,
+    const templateParams = {
+      from_name: data.nome,
       message: message,
       email: data.email
     }
+
     const nome = data.nome.split(" ")[0];
+    
     toast
     .promise(emailjs.send("service_25lk82j", "template_8s3803h", templateParams, "fP2o81_ckd383koPa"), {
       pending: {

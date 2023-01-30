@@ -1,6 +1,6 @@
 import { ContactUs } from "./style";
 import { FiArrowUpRight } from "react-icons/fi";
-import { RiWhatsappFill } from "react-icons/ri";
+import { RiWhatsappFill, RiInstagramFill } from "react-icons/ri";
 import BackgroundDesk from "../../assets/background-contato-desktop.png";
 import BackgroundMob from "../../assets/background-contato-mobile.png";
 import BackgroundTab from "../../assets/background-contato-tablet.png";
@@ -47,6 +47,17 @@ function ContactUsComponent() {
             >
               <span>
                 +55 (12) 3933-3601 <RiWhatsappFill />
+              </span>
+            </a>
+          </p>
+          <p id="social-insta">
+            Nos siga em nossa rede social:{" "}
+            <a
+              href="https://www.instagram.com/cdvblocosepisos/"
+              target="blank"
+            >
+              <span>
+                @cdvblocosepisos <RiInstagramFill />
               </span>
             </a>
           </p>

@@ -44,6 +44,7 @@ export const Header = styled.header`
         :hover {
           color: var(--yellow-background);
         }
+        color: var(--white);
         
         :visited {
           :hover {

@@ -3,6 +3,7 @@ import BlocksStrategyComponent from "../../components/BlocksStrategy";
 import { motion } from "framer-motion";
 import FormComponent from "../../components/Form";
 import FooterComponent from "../../components/Footer";
+import FotosComponent from "../../components/Fotos";
 
 function HomePage() {
   return (
@@ -15,6 +16,7 @@ function HomePage() {
       <div>
         <FormComponent />
         <AboutComponent />
+        <FotosComponent />
         <BlocksStrategyComponent />
         <FooterComponent/>
       </div>

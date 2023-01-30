@@ -215,6 +215,26 @@ export const ContactUs = styled.div`
         span {
           display: flex;
           align-items: center;
+          
+          svg {
+            margin-bottom: 5px;
+            margin-left: 5px;
+          }
+        }
+      }
+      #social-insta {
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 160%;
+
+        span {
+          display: flex;
+          align-items: center;
+          
+          svg {
+            margin-bottom: 2px;
+            margin-left: 7px;
+          }
         }
       }
 
@@ -279,6 +299,9 @@ export const ContactUs = styled.div`
         }
 
         #numberPhone {
+          width: 100%;
+        }
+        #social-insta {
           width: 100%;
         }
       }

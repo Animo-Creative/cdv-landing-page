@@ -22,6 +22,24 @@ export const Footer = styled.footer`
             font-family: 'Heebo', sans-serif;
             font-weight: 400;
             font-size: 18px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            
+            a {
+                display: flex;
+                align-items: center;
+                color: white;
+
+                :visited {
+                    color: white;
+                }
+
+                svg {
+                    margin: 0 5px;
+                }
+            }
+            
         }
 
         button {

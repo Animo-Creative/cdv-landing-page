@@ -1,4 +1,4 @@
-import { About, NossosValores } from "./style";
+import { About, Fotos, NossosValores } from "./style";
 import BackAboutUs from "../../assets/background-aboutus.png";
 import Bar from "../../assets/bar-yellow-blue.svg";
 import Credibilidade from "../../assets/ourValues/credibilidade.svg"
@@ -13,7 +13,6 @@ import LiderancaOrange from "../../assets/ourValues/lideranca-orange.svg"
 import AgilidadeOrange from "../../assets/ourValues/agilidade-orange.svg"
 import SolidezFinanceiraOrange from "../../assets/ourValues/solidez-financeira-orange.svg"
 import ResultadoOrange from "../../assets/ourValues/resultado-orange.svg"
-
 
 function AboutComponent() {
   let width = window.screen.width;
@@ -70,6 +69,7 @@ function AboutComponent() {
           </figure>
         </div>
       </div>
+      
       <NossosValores>
         <div className="textsContainer">
           <h3>Comprometimento!</h3>

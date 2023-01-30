@@ -8,12 +8,10 @@ export const About = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  //overflow-x: hidden;
 
   .container {
     display: flex;
     justify-content: center;
-    //overflow: ;
 
     .quemSomos {
       width: 696px;
@@ -75,18 +73,18 @@ export const About = styled.div`
   }
 
   @media (max-width: 900px) {
-    height: 1900px; //
-    padding-top: 150px; //
+    height: 1900px;
+    padding-top: 150px;
 
     .container {
-      flex-direction: column; //
-      height: 500px; //
+      flex-direction: column;
+      height: 500px;
       
       .quemSomos {
-        width: 80%; //
-        height: auto; //
-        margin: 40px auto; //
-        padding: 48px; //
+        width: 80%;
+        height: auto;
+        margin: 40px auto;
+        padding: 48px;
 
         h3 {
           font-size: 12px;
@@ -102,10 +100,10 @@ export const About = styled.div`
       }
 
       .nossaHistoria {
-        width: 80%; //
-        height: 400px; //
-        margin: auto; //
-        padding: 48px; //
+        width: 80%;
+        height: 400px;
+        margin: auto;
+        padding: 48px;
         flex-direction: column;
 
         h3 {
@@ -283,7 +281,7 @@ export const NossosValores = styled.section`
     .textsContainer {
       flex-direction: column;
       justify-content: space-between;
-      align-items: center; //
+      align-items: center;
       width: 100%;
       gap: 20px;
 
@@ -296,7 +294,7 @@ export const NossosValores = styled.section`
       div {
         display: flex;
         flex-direction: column;
-      align-items: center; //
+      align-items: center;
 
         color: var(--black);
 
@@ -397,3 +395,4 @@ export const NossosValores = styled.section`
   }
 }
 `;
+
